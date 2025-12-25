@@ -1,0 +1,246 @@
+[0.000000] (-) TimerEvent: {}
+[0.012568] (fake_robot) JobQueued: {'identifier': 'fake_robot', 'dependencies': OrderedDict()}
+[0.012869] (kalman_positioning) JobQueued: {'identifier': 'kalman_positioning', 'dependencies': OrderedDict()}
+[0.012903] (fake_robot) JobStarted: {'identifier': 'fake_robot'}
+[0.104572] (kalman_positioning) JobStarted: {'identifier': 'kalman_positioning'}
+[0.106269] (-) TimerEvent: {}
+[0.151933] (fake_robot) JobProgress: {'identifier': 'fake_robot', 'progress': 'cmake'}
+[0.167457] (fake_robot) JobProgress: {'identifier': 'fake_robot', 'progress': 'build'}
+[0.167618] (fake_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/studamr/ros2_ws_exer01/build/fake_robot', '--', '-j4', '-l4'], 'cwd': '/home/studamr/ros2_ws_exer01/build/fake_robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'studamr', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/studamr', 'OLDPWD': '/home/studamr', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1971', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'studamr', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'studamr', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/AMR2025TUDA:@/tmp/.ICE-unix/1932,unix/AMR2025TUDA:/tmp/.ICE-unix/1932', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c714fc9c_757a_4219_aaf7_1e2d63dd2ea1', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.OC4SG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.128', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/studamr/ros2_ws_exer01/build/fake_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.192700] (kalman_positioning) JobProgress: {'identifier': 'kalman_positioning', 'progress': 'cmake'}
+[0.201745] (kalman_positioning) JobProgress: {'identifier': 'kalman_positioning', 'progress': 'build'}
+[0.204280] (kalman_positioning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/studamr/ros2_ws_exer01/build/kalman_positioning', '--', '-j4', '-l4'], 'cwd': '/home/studamr/ros2_ws_exer01/build/kalman_positioning', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'studamr', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/studamr', 'OLDPWD': '/home/studamr', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1971', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'studamr', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'studamr', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/AMR2025TUDA:@/tmp/.ICE-unix/1932,unix/AMR2025TUDA:/tmp/.ICE-unix/1932', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c714fc9c_757a_4219_aaf7_1e2d63dd2ea1', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.OC4SG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.128', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/studamr/ros2_ws_exer01/build/kalman_positioning', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.211190] (-) TimerEvent: {}
+[0.317596] (-) TimerEvent: {}
+[0.425798] (-) TimerEvent: {}
+[0.533783] (-) TimerEvent: {}
+[0.636523] (-) TimerEvent: {}
+[0.742228] (-) TimerEvent: {}
+[0.829464] (fake_robot) StdoutLine: {'line': b'[100%] Built target fake_robot\n'}
+[0.849059] (-) TimerEvent: {}
+[0.870866] (fake_robot) CommandEnded: {'returncode': 0}
+[0.871468] (fake_robot) JobProgress: {'identifier': 'fake_robot', 'progress': 'install'}
+[0.925492] (fake_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/studamr/ros2_ws_exer01/build/fake_robot'], 'cwd': '/home/studamr/ros2_ws_exer01/build/fake_robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'studamr', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/studamr', 'OLDPWD': '/home/studamr', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1971', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'studamr', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'studamr', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/AMR2025TUDA:@/tmp/.ICE-unix/1932,unix/AMR2025TUDA:/tmp/.ICE-unix/1932', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c714fc9c_757a_4219_aaf7_1e2d63dd2ea1', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.OC4SG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.128', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/studamr/ros2_ws_exer01/build/fake_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.939458] (kalman_positioning) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o\x1b[0m\n'}
+[0.949730] (-) TimerEvent: {}
+[0.957714] (kalman_positioning) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/positioning_node.dir/src/ukf.cpp.o\x1b[0m\n'}
+[0.967463] (fake_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.974995] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/lib/fake_robot/fake_robot\n'}
+[0.979028] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/launch\n'}
+[0.979132] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/launch/fake_robot.launch.py\n'}
+[0.979427] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/data\n'}
+[0.979546] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/data/landmarks.csv\n'}
+[0.979617] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/ament_index/resource_index/package_run_dependencies/fake_robot\n'}
+[0.979682] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/ament_index/resource_index/parent_prefix_path/fake_robot\n'}
+[0.979742] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/ament_prefix_path.sh\n'}
+[0.985552] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/ament_prefix_path.dsv\n'}
+[0.986341] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/path.sh\n'}
+[0.986475] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/path.dsv\n'}
+[0.986768] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.bash\n'}
+[0.986928] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.sh\n'}
+[0.987068] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.zsh\n'}
+[0.987188] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.dsv\n'}
+[0.987285] (fake_robot) StdoutLine: {'line': b'-- Installing: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/package.dsv\n'}
+[0.987395] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/ament_index/resource_index/packages/fake_robot\n'}
+[0.987495] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/cmake/fake_robotConfig.cmake\n'}
+[0.987591] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/cmake/fake_robotConfig-version.cmake\n'}
+[0.987673] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/package.xml\n'}
+[0.998802] (fake_robot) CommandEnded: {'returncode': 0}
+[1.050081] (-) TimerEvent: {}
+[1.145015] (fake_robot) JobEnded: {'identifier': 'fake_robot', 'rc': 0}
+[1.151154] (-) TimerEvent: {}
+[1.252800] (-) TimerEvent: {}
+[1.355911] (-) TimerEvent: {}
+[1.459743] (-) TimerEvent: {}
+[1.562362] (-) TimerEvent: {}
+[1.670047] (-) TimerEvent: {}
+[1.773235] (-) TimerEvent: {}
+[1.877767] (-) TimerEvent: {}
+[1.979778] (-) TimerEvent: {}
+[2.082897] (-) TimerEvent: {}
+[2.184949] (-) TimerEvent: {}
+[2.285854] (-) TimerEvent: {}
+[2.390993] (-) TimerEvent: {}
+[2.493211] (-) TimerEvent: {}
+[2.594023] (-) TimerEvent: {}
+[2.699338] (-) TimerEvent: {}
+[2.804131] (-) TimerEvent: {}
+[2.912383] (-) TimerEvent: {}
+[3.030135] (-) TimerEvent: {}
+[3.143466] (-) TimerEvent: {}
+[3.248092] (-) TimerEvent: {}
+[3.350338] (-) TimerEvent: {}
+[3.453552] (-) TimerEvent: {}
+[3.568839] (-) TimerEvent: {}
+[3.675617] (-) TimerEvent: {}
+[3.779118] (-) TimerEvent: {}
+[3.886567] (-) TimerEvent: {}
+[3.992820] (-) TimerEvent: {}
+[4.100778] (-) TimerEvent: {}
+[4.202288] (-) TimerEvent: {}
+[4.303232] (-) TimerEvent: {}
+[4.416220] (-) TimerEvent: {}
+[4.526206] (-) TimerEvent: {}
+[4.632976] (-) TimerEvent: {}
+[4.737280] (-) TimerEvent: {}
+[4.839911] (-) TimerEvent: {}
+[4.943919] (-) TimerEvent: {}
+[5.061062] (-) TimerEvent: {}
+[5.167378] (-) TimerEvent: {}
+[5.268548] (-) TimerEvent: {}
+[5.371162] (-) TimerEvent: {}
+[5.477529] (-) TimerEvent: {}
+[5.584558] (-) TimerEvent: {}
+[5.688310] (-) TimerEvent: {}
+[5.792025] (-) TimerEvent: {}
+[5.896501] (-) TimerEvent: {}
+[6.002630] (-) TimerEvent: {}
+[6.108035] (-) TimerEvent: {}
+[6.374418] (-) TimerEvent: {}
+[6.382157] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:360:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid UKF::\x1b[01;32m\x1b[KsetInitialState\x1b[m\x1b[K(double, double, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.383252] (kalman_positioning) StderrLine: {'line': b'  360 | void \x1b[01;31m\x1b[KUKF\x1b[m\x1b[K::setInitialState(double x, double y, double theta) {\n'}
+[6.383343] (kalman_positioning) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.383400] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:360:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kvoid UKF::\x1b[01;32m\x1b[KsetInitialState\x1b[m\x1b[K(double, double, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.383457] (kalman_positioning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:1\x1b[m\x1b[K:\n'}
+[6.383512] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/include/kalman_positioning/ukf.hpp:9:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass UKF\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[6.383622] (kalman_positioning) StderrLine: {'line': b'    9 | class \x1b[01;36m\x1b[KUKF\x1b[m\x1b[K {\n'}
+[6.383680] (kalman_positioning) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.475721] (-) TimerEvent: {}
+[8.802846] (-) TimerEvent: {}
+[8.922723] (-) TimerEvent: {}
+[9.025654] (-) TimerEvent: {}
+[9.100663] (kalman_positioning) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:90: CMakeFiles/positioning_node.dir/src/ukf.cpp.o] Error 1\n'}
+[9.100979] (kalman_positioning) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[9.126521] (-) TimerEvent: {}
+[9.230706] (-) TimerEvent: {}
+[9.345578] (-) TimerEvent: {}
+[9.443459] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PositioningNode::\x1b[01;32m\x1b[KodometryCallback\x1b[m\x1b[K(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.443819] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Time\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[9.443894] (kalman_positioning) StderrLine: {'line': b'  189 |         double dt = (\x1b[32m\x1b[Kmsg->header.stamp\x1b[m\x1b[K \x1b[01;31m\x1b[K-\x1b[m\x1b[K \x1b[34m\x1b[Klast_odom_stamp_\x1b[m\x1b[K).seconds();\n'}
+[9.443961] (kalman_positioning) StderrLine: {'line': b'      |                      \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^\x1b[m\x1b[K \x1b[34m\x1b[K~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.444024] (kalman_positioning) StderrLine: {'line': b'      |                                  \x1b[32m\x1b[K|\x1b[m\x1b[K       \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[9.444083] (kalman_positioning) StderrLine: {'line': b'      |                                  \x1b[32m\x1b[K|\x1b[m\x1b[K       \x1b[34m\x1b[Krclcpp::Time\x1b[m\x1b[K\n'}
+[9.444144] (kalman_positioning) StderrLine: {'line': b'      |                                  \x1b[32m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type {aka builtin_interfaces::msg::Time_<std::allocator<void> >}\x1b[m\x1b[K\n'}
+[9.445790] (kalman_positioning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[9.446167] (-) TimerEvent: {}
+[9.446521] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_uninitialized.h:63\x1b[m\x1b[K,\n'}
+[9.446987] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:69\x1b[m\x1b[K,\n'}
+[9.447062] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K,\n'}
+[9.447125] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.447251] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.447323] (kalman_positioning) StderrLine: {'line': b'  625 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[9.447384] (kalman_positioning) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.447441] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:625:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[9.447503] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.447613] (kalman_positioning) StderrLine: {'line': b'  189 |         double dt = (msg->header.stamp - \x1b[01;36m\x1b[Klast_odom_stamp_\x1b[m\x1b[K).seconds();\n'}
+[9.447688] (kalman_positioning) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.448699] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.448943] (kalman_positioning) StderrLine: {'line': b' 1800 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[9.449186] (kalman_positioning) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.449276] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[9.449340] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.449403] (kalman_positioning) StderrLine: {'line': b'  189 |         double dt = (msg->header.stamp - \x1b[01;36m\x1b[Klast_odom_stamp_\x1b[m\x1b[K).seconds();\n'}
+[9.449459] (kalman_positioning) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.449517] (kalman_positioning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[9.449573] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[9.449628] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/include/kalman_positioning/ukf.hpp:4\x1b[m\x1b[K,\n'}
+[9.449687] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:11\x1b[m\x1b[K:\n'}
+[9.449742] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/complex:365:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const complex<_Tp>&, const complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.449806] (kalman_positioning) StderrLine: {'line': b'  365 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const complex<_Tp>& __x, const complex<_Tp>& __y)\n'}
+[9.449866] (kalman_positioning) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.449920] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/complex:365:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[9.449980] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.450045] (kalman_positioning) StderrLine: {'line': b'  189 |         double dt = (msg->header.stamp - \x1b[01;36m\x1b[Klast_odom_stamp_\x1b[m\x1b[K).seconds();\n'}
+[9.450130] (kalman_positioning) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.450185] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/complex:374:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const complex<_Tp>&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.450245] (kalman_positioning) StderrLine: {'line': b'  374 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const complex<_Tp>& __x, const _Tp& __y)\n'}
+[9.450300] (kalman_positioning) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.450355] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/complex:374:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[9.450413] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.450473] (kalman_positioning) StderrLine: {'line': b'  189 |         double dt = (msg->header.stamp - \x1b[01;36m\x1b[Klast_odom_stamp_\x1b[m\x1b[K).seconds();\n'}
+[9.450530] (kalman_positioning) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.450616] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/complex:383:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const _Tp&, const complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.451840] (kalman_positioning) StderrLine: {'line': b'  383 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const _Tp& __x, const complex<_Tp>& __y)\n'}
+[9.451936] (kalman_positioning) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.452180] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/complex:383:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[9.452272] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Time\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.452338] (kalman_positioning) StderrLine: {'line': b'  189 |         double dt = (msg->header.stamp - \x1b[01;36m\x1b[Klast_odom_stamp_\x1b[m\x1b[K).seconds();\n'}
+[9.452423] (kalman_positioning) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.452480] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/complex:460:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.452551] (kalman_positioning) StderrLine: {'line': b'  460 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const complex<_Tp>& __x)\n'}
+[9.452609] (kalman_positioning) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.452666] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/complex:460:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[9.452724] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.452796] (kalman_positioning) StderrLine: {'line': b'  189 |         double dt = (msg->header.stamp - \x1b[01;36m\x1b[Klast_odom_stamp_\x1b[m\x1b[K).seconds();\n'}
+[9.452855] (kalman_positioning) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.452911] (kalman_positioning) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/time.hpp:24\x1b[m\x1b[K,\n'}
+[9.452968] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/clock.hpp:24\x1b[m\x1b[K,\n'}
+[9.453025] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/client.hpp:38\x1b[m\x1b[K,\n'}
+[9.453081] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[9.453142] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[9.453211] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[9.453266] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[9.453322] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[9.453376] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[9.453434] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[9.453494] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[9.453554] (kalman_positioning) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K:\n'}
+[9.453611] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/duration.hpp:168:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg::Time rclcpp::\x1b[01;32m\x1b[Koperator-\x1b[m\x1b[K(const builtin_interfaces::msg::Time&, const Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.453671] (kalman_positioning) StderrLine: {'line': b'  168 | \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const builtin_interfaces::msg::Time & lhs, const rclcpp::Duration & rhs);\n'}
+[9.453731] (kalman_positioning) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.453789] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/kilted/include/rclcpp/rclcpp/duration.hpp:168:79:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 2 from \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Time\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::Duration&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.453847] (kalman_positioning) StderrLine: {'line': b'  168 | operator-(const builtin_interfaces::msg::Time & lhs, \x1b[01;36m\x1b[Kconst rclcpp::Duration & rhs\x1b[m\x1b[K);\n'}
+[9.453907] (kalman_positioning) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[9.453978] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:200:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstatic double UKF::\x1b[01;32m\x1b[KnormalizeAngle\x1b[m\x1b[K(double)\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[9.454045] (kalman_positioning) StderrLine: {'line': b'  200 |         double dtheta = \x1b[01;31m\x1b[KUKF::normalizeAngle(theta - last_odom_theta_)\x1b[m\x1b[K;\n'}
+[9.454104] (kalman_positioning) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.454168] (kalman_positioning) StderrLine: {'line': b'\x1b[01m\x1b[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/include/kalman_positioning/ukf.hpp:107:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[9.454278] (kalman_positioning) StderrLine: {'line': b'  107 |     static double \x1b[01;36m\x1b[KnormalizeAngle\x1b[m\x1b[K(double angle);\n'}
+[9.454348] (kalman_positioning) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.600612] (-) TimerEvent: {}
+[9.702743] (-) TimerEvent: {}
+[9.804489] (-) TimerEvent: {}
+[9.927532] (-) TimerEvent: {}
+[10.065257] (-) TimerEvent: {}
+[10.166079] (-) TimerEvent: {}
+[10.271003] (-) TimerEvent: {}
+[10.377941] (-) TimerEvent: {}
+[10.481608] (-) TimerEvent: {}
+[10.584240] (-) TimerEvent: {}
+[10.691580] (-) TimerEvent: {}
+[10.805915] (-) TimerEvent: {}
+[10.909782] (-) TimerEvent: {}
+[11.017845] (-) TimerEvent: {}
+[11.119624] (-) TimerEvent: {}
+[11.222932] (-) TimerEvent: {}
+[11.326087] (-) TimerEvent: {}
+[11.457762] (-) TimerEvent: {}
+[11.561464] (-) TimerEvent: {}
+[11.681720] (-) TimerEvent: {}
+[11.782697] (-) TimerEvent: {}
+[11.887025] (-) TimerEvent: {}
+[12.067785] (-) TimerEvent: {}
+[12.239527] (-) TimerEvent: {}
+[12.340341] (-) TimerEvent: {}
+[12.457911] (-) TimerEvent: {}
+[12.559743] (-) TimerEvent: {}
+[12.763589] (-) TimerEvent: {}
+[12.886618] (-) TimerEvent: {}
+[12.987863] (-) TimerEvent: {}
+[13.095304] (-) TimerEvent: {}
+[13.224336] (-) TimerEvent: {}
+[13.349722] (-) TimerEvent: {}
+[13.458991] (-) TimerEvent: {}
+[13.561682] (-) TimerEvent: {}
+[13.676287] (-) TimerEvent: {}
+[13.817261] (-) TimerEvent: {}
+[13.923688] (-) TimerEvent: {}
+[14.026813] (-) TimerEvent: {}
+[14.130435] (-) TimerEvent: {}
+[14.233898] (-) TimerEvent: {}
+[14.245087] (kalman_positioning) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:76: CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o] Error 1\n'}
+[14.247599] (kalman_positioning) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2\n'}
+[14.248940] (kalman_positioning) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.259598] (kalman_positioning) CommandEnded: {'returncode': 2}
+[14.286677] (kalman_positioning) JobEnded: {'identifier': 'kalman_positioning', 'rc': 2}
+[14.300918] (-) EventReactorShutdown: {}

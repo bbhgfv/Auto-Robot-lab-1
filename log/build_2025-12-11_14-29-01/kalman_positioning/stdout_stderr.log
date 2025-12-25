@@ -1,0 +1,11 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/ukf.cpp.o[0m
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:[m[K In member function ‘[01m[Kvoid UKF::[01;32m[Kupdate[m[K(const std::vector<std::tuple<int, double, double, double> >&)[m[K’:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:265:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+  265 |     RCLCPP_INFO([01;31m[Krclcpp[m[K::get_logger("UKF"),
+      |                 [01;31m[K^~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:265:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+  265 |     [01;31m[KRCLCPP_INFO[m[K(rclcpp::get_logger("UKF"),
+      |     [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:90: CMakeFiles/positioning_node.dir/src/ukf.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

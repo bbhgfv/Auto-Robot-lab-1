@@ -1,0 +1,13 @@
+[0.094s] Invoking command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4
+[0.743s] [ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/ukf.cpp.o[0m
+[4.986s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:[m[K In member function ‘[01m[Kvoid UKF::[01;32m[Kupdate[m[K(const std::vector<std::tuple<int, double, double, double> >&)[m[K’:
+[4.986s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:265:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[4.986s]   265 |     RCLCPP_INFO([01;31m[Krclcpp[m[K::get_logger("UKF"),
+[4.986s]       |                 [01;31m[K^~~~~~[m[K
+[5.014s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:265:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+[5.014s]   265 |     [01;31m[KRCLCPP_INFO[m[K(rclcpp::get_logger("UKF"),
+[5.015s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[10.338s] gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:90: CMakeFiles/positioning_node.dir/src/ukf.cpp.o] Error 1
+[10.351s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+[10.351s] gmake: *** [Makefile:146: all] Error 2
+[10.354s] Invoked command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4

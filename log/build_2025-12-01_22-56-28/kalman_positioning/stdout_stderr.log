@@ -1,0 +1,15 @@
+[100%] Built target positioning_node
+-- Install configuration: ""
+-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/lib/kalman_positioning/positioning_node
+-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include
+-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include/kalman_positioning
+-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include/kalman_positioning/ukf.hpp
+-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include/kalman_positioning/landmark_manager.hpp
+-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/launch
+-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/launch/positioning.launch.py
+[31mCMake Error at cmake_install.cmake:78 (file):
+  file INSTALL cannot find
+  "/home/studamr/ros2_ws_exer01/src/kalman_positioning/landmarks.csv": No
+  such file or directory.
+
+[0m

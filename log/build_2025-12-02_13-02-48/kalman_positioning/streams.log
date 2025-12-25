@@ -1,0 +1,34 @@
+[0.116s] Invoking command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4
+[0.825s] [ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o[0m
+[0.893s] [ 50%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/ukf.cpp.o[0m
+[28.731s] [ 75%] [32m[1mLinking CXX executable positioning_node[0m
+[54.765s] [100%] Built target positioning_node
+[54.806s] Invoked command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4
+[54.810s] Invoking command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/studamr/ros2_ws_exer01/build/kalman_positioning
+[54.847s] -- Install configuration: ""
+[54.847s] -- Installing: /home/studamr/ros2_ws_exer01/install/kalman_positioning/lib/kalman_positioning/positioning_node
+[54.974s] -- Set non-toolchain portion of runtime path of "/home/studamr/ros2_ws_exer01/install/kalman_positioning/lib/kalman_positioning/positioning_node" to ""
+[54.974s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include
+[54.975s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include/kalman_positioning
+[54.975s] -- Installing: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include/kalman_positioning/ukf.hpp
+[54.980s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include/kalman_positioning/landmark_manager.hpp
+[54.980s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/launch
+[54.981s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/launch/positioning.launch.py
+[54.981s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/data
+[54.981s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/data/landmarks.csv
+[54.981s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/ament_index/resource_index/package_run_dependencies/kalman_positioning
+[54.982s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/ament_index/resource_index/parent_prefix_path/kalman_positioning
+[54.982s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/environment/ament_prefix_path.sh
+[54.982s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/environment/ament_prefix_path.dsv
+[54.983s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/environment/path.sh
+[54.983s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/environment/path.dsv
+[54.983s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/local_setup.bash
+[54.983s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/local_setup.sh
+[54.983s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/local_setup.zsh
+[54.984s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/local_setup.dsv
+[54.984s] -- Installing: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/package.dsv
+[54.985s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/ament_index/resource_index/packages/kalman_positioning
+[54.985s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/cmake/kalman_positioningConfig.cmake
+[54.985s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/cmake/kalman_positioningConfig-version.cmake
+[54.985s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/package.xml
+[54.988s] Invoked command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/studamr/ros2_ws_exer01/build/kalman_positioning

@@ -1,0 +1,10 @@
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/uninstall.dir
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/fake_robot_uninstall.dir
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/fake_robot.dir
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/test.dir
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/edit_cache.dir
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/rebuild_cache.dir
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/list_install_components.dir
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/install.dir
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/install/local.dir
+/home/studamr/ros2_ws_exer01/src/build/fake_robot/CMakeFiles/install/strip.dir

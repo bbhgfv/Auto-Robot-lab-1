@@ -1,0 +1,10 @@
+[0.162s] Invoking command in '/home/studamr/ros2_ws_exer01/build/fake_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/fake_robot -- -j4 -l4
+[0.675s] [ 50%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o[0m
+[11.097s] [01m[K/home/studamr/ros2_ws_exer01/src/fake_robot/src/fake_robot.cpp:[m[K In constructor ‘[01m[KLandmarkPublisher::[01;32m[KLandmarkPublisher[m[K()[m[K’:
+[11.097s] [01m[K/home/studamr/ros2_ws_exer01/src/fake_robot/src/fake_robot.cpp:104:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_observed_landmarks[m[K’ is not a member of ‘[01m[KLandmarkPublisher[m[K’
+[11.097s]   104 |       std::bind(&LandmarkPublisher::[01;31m[Kpublish_observed_landmarks[m[K, this));
+[11.097s]       |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.329s] gmake[2]: *** [CMakeFiles/fake_robot.dir/build.make:76: CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o] Error 1
+[15.332s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/fake_robot.dir/all] Error 2
+[15.333s] gmake: *** [Makefile:146: all] Error 2
+[15.341s] Invoked command in '/home/studamr/ros2_ws_exer01/build/fake_robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/fake_robot -- -j4 -l4

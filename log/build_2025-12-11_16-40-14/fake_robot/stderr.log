@@ -1,0 +1,7 @@
+[01m[K/home/studamr/ros2_ws_exer01/src/fake_robot/src/fake_robot.cpp:[m[K In constructor ‘[01m[KLandmarkPublisher::[01;32m[KLandmarkPublisher[m[K()[m[K’:
+[01m[K/home/studamr/ros2_ws_exer01/src/fake_robot/src/fake_robot.cpp:104:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_observed_landmarks[m[K’ is not a member of ‘[01m[KLandmarkPublisher[m[K’
+  104 |       std::bind(&LandmarkPublisher::[01;31m[Kpublish_observed_landmarks[m[K, this));
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/fake_robot.dir/build.make:76: CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/fake_robot.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

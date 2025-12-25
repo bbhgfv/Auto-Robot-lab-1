@@ -1,0 +1,12 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o[0m
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:[m[K In member function ‘[01m[Kvoid PositioningNode::[01;32m[KodometryCallback[m[K(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:195:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic double UKF::[01;32m[KnormalizeAngle[m[K(double)[m[K’ is private within this context
+  195 |         double dtheta = [01;31m[KUKF::normalizeAngle(theta - last_theta_)[m[K;
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:8[m[K:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/include/kalman_positioning/ukf.hpp:107:19:[m[K [01;36m[Knote: [m[Kdeclared private here
+  107 |     static double [01;36m[KnormalizeAngle[m[K(double angle);
+      |                   [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:76: CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

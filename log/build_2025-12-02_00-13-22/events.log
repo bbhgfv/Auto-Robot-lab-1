@@ -1,0 +1,527 @@
+[0.000000] (-) TimerEvent: {}
+[0.001587] (fake_robot) JobQueued: {'identifier': 'fake_robot', 'dependencies': OrderedDict()}
+[0.001703] (kalman_positioning) JobQueued: {'identifier': 'kalman_positioning', 'dependencies': OrderedDict()}
+[0.004082] (fake_robot) JobStarted: {'identifier': 'fake_robot'}
+[0.021312] (kalman_positioning) JobStarted: {'identifier': 'kalman_positioning'}
+[0.052030] (fake_robot) JobProgress: {'identifier': 'fake_robot', 'progress': 'cmake'}
+[0.064565] (fake_robot) JobProgress: {'identifier': 'fake_robot', 'progress': 'build'}
+[0.065353] (fake_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/studamr/ros2_ws_exer01/build/fake_robot', '--', '-j4', '-l4'], 'cwd': '/home/studamr/ros2_ws_exer01/build/fake_robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'studamr', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/studamr', 'OLDPWD': '/home/studamr/ros2_ws_exer01/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2162', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'studamr', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'studamr', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/AMR2025TUDA:@/tmp/.ICE-unix/2121,unix/AMR2025TUDA:/tmp/.ICE-unix/2121', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/657b6ae0_f235_45ad_bad5_5b8d95384c6e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7DQYG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.126', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/studamr/ros2_ws_exer01/build/fake_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.085052] (kalman_positioning) JobProgress: {'identifier': 'kalman_positioning', 'progress': 'cmake'}
+[0.089407] (kalman_positioning) JobProgress: {'identifier': 'kalman_positioning', 'progress': 'build'}
+[0.089649] (kalman_positioning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/studamr/ros2_ws_exer01/build/kalman_positioning', '--', '-j4', '-l4'], 'cwd': '/home/studamr/ros2_ws_exer01/build/kalman_positioning', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'studamr', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/studamr', 'OLDPWD': '/home/studamr/ros2_ws_exer01/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2162', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'studamr', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'studamr', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/AMR2025TUDA:@/tmp/.ICE-unix/2121,unix/AMR2025TUDA:/tmp/.ICE-unix/2121', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/657b6ae0_f235_45ad_bad5_5b8d95384c6e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7DQYG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.126', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/studamr/ros2_ws_exer01/build/kalman_positioning', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.102151] (-) TimerEvent: {}
+[0.221333] (-) TimerEvent: {}
+[0.323355] (-) TimerEvent: {}
+[0.402971] (fake_robot) StdoutLine: {'line': b'[100%] Built target fake_robot\n'}
+[0.423863] (-) TimerEvent: {}
+[0.440128] (fake_robot) CommandEnded: {'returncode': 0}
+[0.444342] (fake_robot) JobProgress: {'identifier': 'fake_robot', 'progress': 'install'}
+[0.479595] (fake_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/studamr/ros2_ws_exer01/build/fake_robot'], 'cwd': '/home/studamr/ros2_ws_exer01/build/fake_robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'studamr', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/studamr', 'OLDPWD': '/home/studamr/ros2_ws_exer01/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2162', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'studamr', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'studamr', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/AMR2025TUDA:@/tmp/.ICE-unix/2121,unix/AMR2025TUDA:/tmp/.ICE-unix/2121', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/657b6ae0_f235_45ad_bad5_5b8d95384c6e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7DQYG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.126', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/studamr/ros2_ws_exer01/build/fake_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.498543] (kalman_positioning) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o\x1b[0m\n'}
+[0.508225] (fake_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.508526] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/lib/fake_robot/fake_robot\n'}
+[0.508614] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/launch\n'}
+[0.508689] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/launch/fake_robot.launch.py\n'}
+[0.510046] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/data\n'}
+[0.510662] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/data/landmarks.csv\n'}
+[0.510754] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/ament_index/resource_index/package_run_dependencies/fake_robot\n'}
+[0.510830] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/ament_index/resource_index/parent_prefix_path/fake_robot\n'}
+[0.510904] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/ament_prefix_path.sh\n'}
+[0.510979] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/ament_prefix_path.dsv\n'}
+[0.511052] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/path.sh\n'}
+[0.511127] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/path.dsv\n'}
+[0.511200] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.bash\n'}
+[0.511273] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.sh\n'}
+[0.511421] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.zsh\n'}
+[0.511505] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.dsv\n'}
+[0.511579] (fake_robot) StdoutLine: {'line': b'-- Installing: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/package.dsv\n'}
+[0.515343] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/ament_index/resource_index/packages/fake_robot\n'}
+[0.518000] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/cmake/fake_robotConfig.cmake\n'}
+[0.518135] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/cmake/fake_robotConfig-version.cmake\n'}
+[0.518216] (fake_robot) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/package.xml\n'}
+[0.521970] (fake_robot) CommandEnded: {'returncode': 0}
+[0.524519] (-) TimerEvent: {}
+[0.609420] (fake_robot) JobEnded: {'identifier': 'fake_robot', 'rc': 0}
+[0.627782] (-) TimerEvent: {}
+[0.731161] (-) TimerEvent: {}
+[0.832866] (-) TimerEvent: {}
+[1.152357] (-) TimerEvent: {}
+[1.304850] (-) TimerEvent: {}
+[1.406104] (-) TimerEvent: {}
+[1.507033] (-) TimerEvent: {}
+[1.608837] (-) TimerEvent: {}
+[1.709751] (-) TimerEvent: {}
+[1.810683] (-) TimerEvent: {}
+[1.912773] (-) TimerEvent: {}
+[2.020470] (-) TimerEvent: {}
+[2.122490] (-) TimerEvent: {}
+[2.225055] (-) TimerEvent: {}
+[2.326730] (-) TimerEvent: {}
+[2.428942] (-) TimerEvent: {}
+[2.530065] (-) TimerEvent: {}
+[2.631620] (-) TimerEvent: {}
+[2.732557] (-) TimerEvent: {}
+[2.834792] (-) TimerEvent: {}
+[2.935205] (-) TimerEvent: {}
+[3.037231] (-) TimerEvent: {}
+[3.140724] (-) TimerEvent: {}
+[3.245016] (-) TimerEvent: {}
+[3.353433] (-) TimerEvent: {}
+[3.460650] (-) TimerEvent: {}
+[3.562302] (-) TimerEvent: {}
+[3.744261] (-) TimerEvent: {}
+[3.869366] (-) TimerEvent: {}
+[3.974924] (-) TimerEvent: {}
+[4.202903] (-) TimerEvent: {}
+[4.303774] (-) TimerEvent: {}
+[4.404426] (-) TimerEvent: {}
+[4.506781] (-) TimerEvent: {}
+[4.610796] (-) TimerEvent: {}
+[4.718054] (-) TimerEvent: {}
+[4.820187] (-) TimerEvent: {}
+[4.924141] (-) TimerEvent: {}
+[5.025160] (-) TimerEvent: {}
+[5.128852] (-) TimerEvent: {}
+[5.231298] (-) TimerEvent: {}
+[5.331984] (-) TimerEvent: {}
+[5.435367] (-) TimerEvent: {}
+[5.540005] (-) TimerEvent: {}
+[5.642292] (-) TimerEvent: {}
+[5.743832] (-) TimerEvent: {}
+[5.845892] (-) TimerEvent: {}
+[5.951996] (-) TimerEvent: {}
+[6.054625] (-) TimerEvent: {}
+[6.160878] (-) TimerEvent: {}
+[6.264376] (-) TimerEvent: {}
+[6.373882] (-) TimerEvent: {}
+[6.478015] (-) TimerEvent: {}
+[6.580187] (-) TimerEvent: {}
+[6.683183] (-) TimerEvent: {}
+[6.796091] (-) TimerEvent: {}
+[6.897013] (-) TimerEvent: {}
+[7.006096] (-) TimerEvent: {}
+[7.114163] (-) TimerEvent: {}
+[7.224711] (-) TimerEvent: {}
+[7.354847] (-) TimerEvent: {}
+[7.456970] (-) TimerEvent: {}
+[7.580907] (-) TimerEvent: {}
+[7.710864] (-) TimerEvent: {}
+[7.837709] (-) TimerEvent: {}
+[7.947282] (-) TimerEvent: {}
+[8.059087] (-) TimerEvent: {}
+[8.222050] (-) TimerEvent: {}
+[8.326736] (-) TimerEvent: {}
+[8.506531] (-) TimerEvent: {}
+[8.623306] (-) TimerEvent: {}
+[8.731724] (-) TimerEvent: {}
+[8.836108] (-) TimerEvent: {}
+[8.938174] (-) TimerEvent: {}
+[9.039564] (-) TimerEvent: {}
+[9.220872] (-) TimerEvent: {}
+[9.321736] (-) TimerEvent: {}
+[9.459437] (-) TimerEvent: {}
+[9.566754] (-) TimerEvent: {}
+[9.667710] (-) TimerEvent: {}
+[9.768686] (-) TimerEvent: {}
+[9.870131] (-) TimerEvent: {}
+[9.975446] (-) TimerEvent: {}
+[10.087559] (-) TimerEvent: {}
+[10.189346] (-) TimerEvent: {}
+[10.318554] (-) TimerEvent: {}
+[10.454139] (-) TimerEvent: {}
+[10.579857] (-) TimerEvent: {}
+[10.686320] (-) TimerEvent: {}
+[10.787796] (-) TimerEvent: {}
+[10.891432] (-) TimerEvent: {}
+[11.000653] (-) TimerEvent: {}
+[11.102077] (-) TimerEvent: {}
+[11.210639] (-) TimerEvent: {}
+[11.354281] (-) TimerEvent: {}
+[11.510812] (-) TimerEvent: {}
+[11.622791] (-) TimerEvent: {}
+[11.727526] (-) TimerEvent: {}
+[11.842868] (-) TimerEvent: {}
+[11.989761] (-) TimerEvent: {}
+[12.133779] (-) TimerEvent: {}
+[12.246187] (-) TimerEvent: {}
+[12.373159] (-) TimerEvent: {}
+[12.554126] (-) TimerEvent: {}
+[12.740133] (-) TimerEvent: {}
+[12.841145] (-) TimerEvent: {}
+[12.943317] (-) TimerEvent: {}
+[13.070785] (-) TimerEvent: {}
+[13.207470] (-) TimerEvent: {}
+[13.370018] (-) TimerEvent: {}
+[13.489814] (-) TimerEvent: {}
+[13.595834] (-) TimerEvent: {}
+[13.699663] (-) TimerEvent: {}
+[13.816998] (-) TimerEvent: {}
+[13.947847] (-) TimerEvent: {}
+[14.049747] (-) TimerEvent: {}
+[14.187777] (-) TimerEvent: {}
+[14.289467] (-) TimerEvent: {}
+[14.412188] (-) TimerEvent: {}
+[14.534923] (-) TimerEvent: {}
+[14.687201] (-) TimerEvent: {}
+[14.788823] (-) TimerEvent: {}
+[14.889566] (-) TimerEvent: {}
+[14.990822] (-) TimerEvent: {}
+[15.132972] (-) TimerEvent: {}
+[15.277702] (-) TimerEvent: {}
+[15.380791] (-) TimerEvent: {}
+[15.535403] (-) TimerEvent: {}
+[15.745069] (-) TimerEvent: {}
+[15.847011] (-) TimerEvent: {}
+[15.959982] (-) TimerEvent: {}
+[16.061379] (-) TimerEvent: {}
+[16.242147] (-) TimerEvent: {}
+[16.348863] (-) TimerEvent: {}
+[16.450011] (-) TimerEvent: {}
+[16.558199] (-) TimerEvent: {}
+[16.699192] (-) TimerEvent: {}
+[16.808063] (-) TimerEvent: {}
+[16.934204] (-) TimerEvent: {}
+[17.063051] (-) TimerEvent: {}
+[17.167342] (-) TimerEvent: {}
+[17.278134] (-) TimerEvent: {}
+[17.384103] (-) TimerEvent: {}
+[17.531161] (-) TimerEvent: {}
+[17.641933] (-) TimerEvent: {}
+[17.745916] (-) TimerEvent: {}
+[17.865739] (-) TimerEvent: {}
+[17.982944] (-) TimerEvent: {}
+[18.099077] (-) TimerEvent: {}
+[18.201362] (-) TimerEvent: {}
+[18.328593] (-) TimerEvent: {}
+[18.436545] (-) TimerEvent: {}
+[18.572330] (-) TimerEvent: {}
+[18.730359] (-) TimerEvent: {}
+[18.864183] (-) TimerEvent: {}
+[18.970037] (-) TimerEvent: {}
+[19.071018] (-) TimerEvent: {}
+[19.176400] (-) TimerEvent: {}
+[19.292080] (-) TimerEvent: {}
+[19.392997] (-) TimerEvent: {}
+[19.508464] (-) TimerEvent: {}
+[19.631680] (-) TimerEvent: {}
+[19.752828] (-) TimerEvent: {}
+[19.860471] (-) TimerEvent: {}
+[19.965165] (-) TimerEvent: {}
+[20.086981] (-) TimerEvent: {}
+[20.188741] (-) TimerEvent: {}
+[20.295633] (-) TimerEvent: {}
+[20.417444] (-) TimerEvent: {}
+[20.518364] (-) TimerEvent: {}
+[20.619988] (-) TimerEvent: {}
+[20.730337] (-) TimerEvent: {}
+[20.831701] (-) TimerEvent: {}
+[20.937096] (-) TimerEvent: {}
+[21.042289] (-) TimerEvent: {}
+[21.143170] (-) TimerEvent: {}
+[21.246323] (-) TimerEvent: {}
+[21.349477] (-) TimerEvent: {}
+[21.451249] (-) TimerEvent: {}
+[21.561975] (-) TimerEvent: {}
+[21.668695] (-) TimerEvent: {}
+[21.774090] (-) TimerEvent: {}
+[21.876641] (-) TimerEvent: {}
+[21.983187] (-) TimerEvent: {}
+[22.084956] (-) TimerEvent: {}
+[22.188362] (-) TimerEvent: {}
+[22.289696] (-) TimerEvent: {}
+[22.392339] (-) TimerEvent: {}
+[22.495188] (-) TimerEvent: {}
+[22.596910] (-) TimerEvent: {}
+[22.698078] (-) TimerEvent: {}
+[22.801304] (-) TimerEvent: {}
+[22.905363] (-) TimerEvent: {}
+[23.011960] (-) TimerEvent: {}
+[23.118250] (-) TimerEvent: {}
+[23.223262] (-) TimerEvent: {}
+[23.330987] (-) TimerEvent: {}
+[23.434089] (-) TimerEvent: {}
+[23.537613] (-) TimerEvent: {}
+[23.641529] (-) TimerEvent: {}
+[23.745988] (-) TimerEvent: {}
+[23.847029] (-) TimerEvent: {}
+[23.970816] (-) TimerEvent: {}
+[24.074376] (-) TimerEvent: {}
+[24.250857] (-) TimerEvent: {}
+[24.351684] (-) TimerEvent: {}
+[24.456501] (-) TimerEvent: {}
+[24.559089] (-) TimerEvent: {}
+[24.714328] (-) TimerEvent: {}
+[24.827933] (-) TimerEvent: {}
+[24.931891] (-) TimerEvent: {}
+[25.034732] (-) TimerEvent: {}
+[25.157791] (-) TimerEvent: {}
+[25.282727] (-) TimerEvent: {}
+[25.385320] (-) TimerEvent: {}
+[25.489246] (-) TimerEvent: {}
+[25.679216] (-) TimerEvent: {}
+[25.780197] (-) TimerEvent: {}
+[25.937101] (-) TimerEvent: {}
+[26.090442] (-) TimerEvent: {}
+[26.191325] (-) TimerEvent: {}
+[26.293640] (-) TimerEvent: {}
+[26.322626] (kalman_positioning) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable positioning_node\x1b[0m\n'}
+[26.398791] (-) TimerEvent: {}
+[26.502375] (-) TimerEvent: {}
+[27.535047] (-) TimerEvent: {}
+[30.511872] (-) TimerEvent: {}
+[30.616347] (-) TimerEvent: {}
+[30.720421] (-) TimerEvent: {}
+[30.822686] (-) TimerEvent: {}
+[30.923684] (-) TimerEvent: {}
+[31.047356] (-) TimerEvent: {}
+[31.151758] (-) TimerEvent: {}
+[31.252690] (-) TimerEvent: {}
+[31.353779] (-) TimerEvent: {}
+[31.458807] (-) TimerEvent: {}
+[31.559950] (-) TimerEvent: {}
+[31.663819] (-) TimerEvent: {}
+[31.765900] (-) TimerEvent: {}
+[31.870032] (-) TimerEvent: {}
+[31.972374] (-) TimerEvent: {}
+[32.100308] (-) TimerEvent: {}
+[32.235215] (-) TimerEvent: {}
+[32.342735] (-) TimerEvent: {}
+[32.444955] (-) TimerEvent: {}
+[32.546302] (-) TimerEvent: {}
+[32.663481] (-) TimerEvent: {}
+[32.785986] (-) TimerEvent: {}
+[32.920984] (-) TimerEvent: {}
+[33.026914] (-) TimerEvent: {}
+[33.128019] (-) TimerEvent: {}
+[33.291007] (-) TimerEvent: {}
+[33.445760] (-) TimerEvent: {}
+[33.556740] (-) TimerEvent: {}
+[33.712222] (-) TimerEvent: {}
+[33.867071] (-) TimerEvent: {}
+[33.989448] (-) TimerEvent: {}
+[34.211833] (-) TimerEvent: {}
+[34.361287] (-) TimerEvent: {}
+[34.476847] (-) TimerEvent: {}
+[34.578614] (-) TimerEvent: {}
+[34.779838] (-) TimerEvent: {}
+[34.921015] (-) TimerEvent: {}
+[35.022123] (-) TimerEvent: {}
+[35.159412] (-) TimerEvent: {}
+[35.294858] (-) TimerEvent: {}
+[35.395823] (-) TimerEvent: {}
+[35.506207] (-) TimerEvent: {}
+[35.606955] (-) TimerEvent: {}
+[35.730485] (-) TimerEvent: {}
+[35.861746] (-) TimerEvent: {}
+[36.119009] (-) TimerEvent: {}
+[36.263165] (-) TimerEvent: {}
+[36.371872] (-) TimerEvent: {}
+[36.477606] (-) TimerEvent: {}
+[36.584962] (-) TimerEvent: {}
+[36.695078] (-) TimerEvent: {}
+[36.798480] (-) TimerEvent: {}
+[36.902360] (-) TimerEvent: {}
+[37.010147] (-) TimerEvent: {}
+[37.112967] (-) TimerEvent: {}
+[37.218429] (-) TimerEvent: {}
+[37.327063] (-) TimerEvent: {}
+[37.428149] (-) TimerEvent: {}
+[37.529954] (-) TimerEvent: {}
+[37.638071] (-) TimerEvent: {}
+[37.742973] (-) TimerEvent: {}
+[37.845739] (-) TimerEvent: {}
+[37.947957] (-) TimerEvent: {}
+[38.049749] (-) TimerEvent: {}
+[38.151268] (-) TimerEvent: {}
+[38.255153] (-) TimerEvent: {}
+[38.357351] (-) TimerEvent: {}
+[38.462608] (-) TimerEvent: {}
+[38.564861] (-) TimerEvent: {}
+[38.669220] (-) TimerEvent: {}
+[38.771581] (-) TimerEvent: {}
+[38.875787] (-) TimerEvent: {}
+[38.980259] (-) TimerEvent: {}
+[39.082783] (-) TimerEvent: {}
+[39.235964] (-) TimerEvent: {}
+[39.362747] (-) TimerEvent: {}
+[39.465773] (-) TimerEvent: {}
+[39.566732] (-) TimerEvent: {}
+[39.673311] (-) TimerEvent: {}
+[39.776514] (-) TimerEvent: {}
+[39.880516] (-) TimerEvent: {}
+[39.983148] (-) TimerEvent: {}
+[40.084856] (-) TimerEvent: {}
+[40.191884] (-) TimerEvent: {}
+[40.296067] (-) TimerEvent: {}
+[40.404602] (-) TimerEvent: {}
+[40.507350] (-) TimerEvent: {}
+[40.608792] (-) TimerEvent: {}
+[40.715989] (-) TimerEvent: {}
+[40.825567] (-) TimerEvent: {}
+[40.927490] (-) TimerEvent: {}
+[41.033021] (-) TimerEvent: {}
+[41.136743] (-) TimerEvent: {}
+[41.240119] (-) TimerEvent: {}
+[41.344339] (-) TimerEvent: {}
+[41.448568] (-) TimerEvent: {}
+[41.551696] (-) TimerEvent: {}
+[41.653532] (-) TimerEvent: {}
+[41.755249] (-) TimerEvent: {}
+[41.856759] (-) TimerEvent: {}
+[41.967148] (-) TimerEvent: {}
+[42.071828] (-) TimerEvent: {}
+[42.175531] (-) TimerEvent: {}
+[42.280793] (-) TimerEvent: {}
+[42.384116] (-) TimerEvent: {}
+[42.488809] (-) TimerEvent: {}
+[42.609878] (-) TimerEvent: {}
+[42.716289] (-) TimerEvent: {}
+[42.817877] (-) TimerEvent: {}
+[42.926297] (-) TimerEvent: {}
+[43.030513] (-) TimerEvent: {}
+[43.134102] (-) TimerEvent: {}
+[43.252272] (-) TimerEvent: {}
+[43.354915] (-) TimerEvent: {}
+[43.517031] (-) TimerEvent: {}
+[43.649849] (-) TimerEvent: {}
+[43.811262] (-) TimerEvent: {}
+[43.913211] (-) TimerEvent: {}
+[44.061134] (-) TimerEvent: {}
+[44.165911] (-) TimerEvent: {}
+[44.309759] (-) TimerEvent: {}
+[44.410773] (-) TimerEvent: {}
+[44.521911] (-) TimerEvent: {}
+[44.684164] (-) TimerEvent: {}
+[44.816383] (-) TimerEvent: {}
+[44.952602] (-) TimerEvent: {}
+[45.091413] (-) TimerEvent: {}
+[45.226548] (-) TimerEvent: {}
+[45.328912] (-) TimerEvent: {}
+[45.468773] (-) TimerEvent: {}
+[45.569810] (-) TimerEvent: {}
+[45.670979] (-) TimerEvent: {}
+[45.791317] (-) TimerEvent: {}
+[45.893012] (-) TimerEvent: {}
+[45.995364] (-) TimerEvent: {}
+[46.100167] (-) TimerEvent: {}
+[46.203820] (-) TimerEvent: {}
+[46.309257] (-) TimerEvent: {}
+[46.414085] (-) TimerEvent: {}
+[46.515714] (-) TimerEvent: {}
+[46.621574] (-) TimerEvent: {}
+[46.723768] (-) TimerEvent: {}
+[46.825408] (-) TimerEvent: {}
+[46.933364] (-) TimerEvent: {}
+[47.039075] (-) TimerEvent: {}
+[47.140239] (-) TimerEvent: {}
+[47.241533] (-) TimerEvent: {}
+[47.351026] (-) TimerEvent: {}
+[47.462323] (-) TimerEvent: {}
+[47.564211] (-) TimerEvent: {}
+[47.723260] (-) TimerEvent: {}
+[47.852865] (-) TimerEvent: {}
+[47.954984] (-) TimerEvent: {}
+[48.063641] (-) TimerEvent: {}
+[48.173732] (-) TimerEvent: {}
+[48.277403] (-) TimerEvent: {}
+[48.379873] (-) TimerEvent: {}
+[48.481147] (-) TimerEvent: {}
+[48.582182] (-) TimerEvent: {}
+[48.693078] (-) TimerEvent: {}
+[48.796000] (-) TimerEvent: {}
+[48.900284] (-) TimerEvent: {}
+[49.004529] (-) TimerEvent: {}
+[49.109942] (-) TimerEvent: {}
+[49.213099] (-) TimerEvent: {}
+[49.317474] (-) TimerEvent: {}
+[49.420034] (-) TimerEvent: {}
+[49.522811] (-) TimerEvent: {}
+[49.629136] (-) TimerEvent: {}
+[49.733278] (-) TimerEvent: {}
+[49.834781] (-) TimerEvent: {}
+[49.957997] (-) TimerEvent: {}
+[50.073499] (-) TimerEvent: {}
+[50.184915] (-) TimerEvent: {}
+[50.285969] (-) TimerEvent: {}
+[50.445795] (-) TimerEvent: {}
+[50.547208] (-) TimerEvent: {}
+[50.695669] (-) TimerEvent: {}
+[50.801702] (-) TimerEvent: {}
+[50.957401] (-) TimerEvent: {}
+[51.076265] (-) TimerEvent: {}
+[51.184589] (-) TimerEvent: {}
+[51.286794] (-) TimerEvent: {}
+[51.395994] (-) TimerEvent: {}
+[51.497749] (-) TimerEvent: {}
+[51.600143] (-) TimerEvent: {}
+[51.704504] (-) TimerEvent: {}
+[51.808094] (-) TimerEvent: {}
+[51.910198] (-) TimerEvent: {}
+[52.011235] (-) TimerEvent: {}
+[52.115178] (-) TimerEvent: {}
+[52.220864] (-) TimerEvent: {}
+[52.323056] (-) TimerEvent: {}
+[52.440955] (-) TimerEvent: {}
+[52.544005] (-) TimerEvent: {}
+[52.644752] (-) TimerEvent: {}
+[52.747269] (-) TimerEvent: {}
+[52.847943] (-) TimerEvent: {}
+[52.950140] (-) TimerEvent: {}
+[53.056485] (-) TimerEvent: {}
+[53.164039] (-) TimerEvent: {}
+[53.275750] (-) TimerEvent: {}
+[53.377512] (-) TimerEvent: {}
+[53.555459] (-) TimerEvent: {}
+[53.678206] (-) TimerEvent: {}
+[53.780733] (-) TimerEvent: {}
+[53.939111] (-) TimerEvent: {}
+[54.061041] (-) TimerEvent: {}
+[54.168975] (-) TimerEvent: {}
+[54.287543] (-) TimerEvent: {}
+[54.419270] (-) TimerEvent: {}
+[54.523238] (-) TimerEvent: {}
+[54.629054] (-) TimerEvent: {}
+[54.734459] (-) TimerEvent: {}
+[54.836421] (-) TimerEvent: {}
+[54.940335] (-) TimerEvent: {}
+[55.047053] (-) TimerEvent: {}
+[55.148292] (-) TimerEvent: {}
+[55.257912] (-) TimerEvent: {}
+[55.360920] (-) TimerEvent: {}
+[55.462641] (-) TimerEvent: {}
+[55.564029] (-) TimerEvent: {}
+[55.662879] (kalman_positioning) StdoutLine: {'line': b'[100%] Built target positioning_node\n'}
+[55.665024] (-) TimerEvent: {}
+[55.711320] (kalman_positioning) CommandEnded: {'returncode': 0}
+[55.717417] (kalman_positioning) JobProgress: {'identifier': 'kalman_positioning', 'progress': 'install'}
+[55.717981] (kalman_positioning) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/studamr/ros2_ws_exer01/build/kalman_positioning'], 'cwd': '/home/studamr/ros2_ws_exer01/build/kalman_positioning', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'studamr', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/studamr', 'OLDPWD': '/home/studamr/ros2_ws_exer01/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2162', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'studamr', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'studamr', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/AMR2025TUDA:@/tmp/.ICE-unix/2121,unix/AMR2025TUDA:/tmp/.ICE-unix/2121', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/657b6ae0_f235_45ad_bad5_5b8d95384c6e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7DQYG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.126', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/studamr/ros2_ws_exer01/build/kalman_positioning', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/studamr/ros2_ws_exer01/install/kalman_positioning:/home/studamr/ros2_ws_exer01/install/fake_robot:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[55.741109] (kalman_positioning) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[55.741969] (kalman_positioning) StdoutLine: {'line': b'-- Installing: /home/studamr/ros2_ws_exer01/install/kalman_positioning/lib/kalman_positioning/positioning_node\n'}
+[55.763388] (kalman_positioning) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/studamr/ros2_ws_exer01/install/kalman_positioning/lib/kalman_positioning/positioning_node" to ""\n'}
+[55.764060] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include\n'}
+[55.764868] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include/kalman_positioning\n'}
+[55.765137] (-) TimerEvent: {}
+[55.765673] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include/kalman_positioning/ukf.hpp\n'}
+[55.766399] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/include/kalman_positioning/landmark_manager.hpp\n'}
+[55.766901] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/launch\n'}
+[55.767013] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/launch/positioning.launch.py\n'}
+[55.767092] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/data\n'}
+[55.767161] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/data/landmarks.csv\n'}
+[55.767230] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/ament_index/resource_index/package_run_dependencies/kalman_positioning\n'}
+[55.767299] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/ament_index/resource_index/parent_prefix_path/kalman_positioning\n'}
+[55.767368] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/environment/ament_prefix_path.sh\n'}
+[55.767436] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/environment/ament_prefix_path.dsv\n'}
+[55.767503] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/environment/path.sh\n'}
+[55.767569] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/environment/path.dsv\n'}
+[55.767636] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/local_setup.bash\n'}
+[55.767721] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/local_setup.sh\n'}
+[55.769407] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/local_setup.zsh\n'}
+[55.769527] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/local_setup.dsv\n'}
+[55.769604] (kalman_positioning) StdoutLine: {'line': b'-- Installing: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/package.dsv\n'}
+[55.769677] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/ament_index/resource_index/packages/kalman_positioning\n'}
+[55.769752] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/cmake/kalman_positioningConfig.cmake\n'}
+[55.769822] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/cmake/kalman_positioningConfig-version.cmake\n'}
+[55.772683] (kalman_positioning) StdoutLine: {'line': b'-- Up-to-date: /home/studamr/ros2_ws_exer01/install/kalman_positioning/share/kalman_positioning/package.xml\n'}
+[55.775815] (kalman_positioning) CommandEnded: {'returncode': 0}
+[55.835794] (kalman_positioning) JobEnded: {'identifier': 'kalman_positioning', 'rc': 0}
+[55.838733] (-) EventReactorShutdown: {}

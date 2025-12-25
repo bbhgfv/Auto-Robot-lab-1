@@ -1,0 +1,10 @@
+[0.058s] Invoking command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4
+[0.407s] [ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/landmark_manager.cpp.o[0m
+[1.596s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/landmark_manager.cpp:[m[K In member function ‘[01m[Kbool LandmarkManager::[01;32m[KloadFromCSV[m[K(const std::string&)[m[K’:
+[1.596s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/landmark_manager.cpp:66:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::map<int, std::pair<double, double> >[m[K’ has no member named ‘[01m[Kpush_back[m[K’
+[1.599s]    66 |         landmarks_.[01;31m[Kpush_back[m[K({id, x, y});
+[1.599s]       |                    [01;31m[K^~~~~~~~~[m[K
+[1.867s] gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:104: CMakeFiles/positioning_node.dir/src/landmark_manager.cpp.o] Error 1
+[1.869s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+[1.871s] gmake: *** [Makefile:146: all] Error 2
+[1.889s] Invoked command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4

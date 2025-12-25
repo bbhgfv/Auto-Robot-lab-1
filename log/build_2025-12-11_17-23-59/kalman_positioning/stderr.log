@@ -1,0 +1,7 @@
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/landmark_manager.cpp:[m[K In member function ‘[01m[Kbool LandmarkManager::[01;32m[KloadFromCSV[m[K(const std::string&)[m[K’:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/landmark_manager.cpp:66:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::map<int, std::pair<double, double> >[m[K’ has no member named ‘[01m[Kpush_back[m[K’
+   66 |         landmarks_.[01;31m[Kpush_back[m[K({id, x, y});
+      |                    [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:104: CMakeFiles/positioning_node.dir/src/landmark_manager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

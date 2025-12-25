@@ -1,0 +1,95 @@
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:360:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid UKF::[01;32m[KsetInitialState[m[K(double, double, double)[m[K’
+  360 | void [01;31m[KUKF[m[K::setInitialState(double x, double y, double theta) {
+      |      [01;31m[K^~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:360:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid UKF::[01;32m[KsetInitialState[m[K(double, double, double)[m[K’
+In file included from [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/ukf.cpp:1[m[K:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/include/kalman_positioning/ukf.hpp:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass UKF[m[K’ defined here
+    9 | class [01;36m[KUKF[m[K {
+      |       [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:90: CMakeFiles/positioning_node.dir/src/ukf.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:[m[K In member function ‘[01m[Kvoid PositioningNode::[01;32m[KodometryCallback[m[K(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:40:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type[m[K’ {aka ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >[m[K’} and ‘[01m[Krclcpp::Time[m[K’)
+  189 |         double dt = ([32m[Kmsg->header.stamp[m[K [01;31m[K-[m[K [34m[Klast_odom_stamp_[m[K).seconds();
+      |                      [32m[K~~~~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~~~[m[K
+      |                                  [32m[K|[m[K       [34m[K|[m[K
+      |                                  [32m[K|[m[K       [34m[Krclcpp::Time[m[K
+      |                                  [32m[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type {aka builtin_interfaces::msg::Time_<std::allocator<void> >}[m[K
+In file included from [01m[K/usr/include/c++/13/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/13/bits/stl_uninitialized.h:63[m[K,
+                 from [01m[K/usr/include/c++/13/memory:69[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+                 from [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:1[m[K:
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:625:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::[01;32m[Koperator-[m[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)[m[K’
+  625 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:625:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type[m[K’ {aka ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+  189 |         double dt = (msg->header.stamp - [01;36m[Klast_odom_stamp_[m[K).seconds();
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::[01;32m[Koperator-[m[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)[m[K’
+ 1800 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type[m[K’ {aka ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+  189 |         double dt = (msg->header.stamp - [01;36m[Klast_odom_stamp_[m[K).seconds();
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/include/kalman_positioning/ukf.hpp:4[m[K,
+                 from [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:11[m[K:
+[01m[K/usr/include/c++/13/complex:365:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator-[m[K(const complex<_Tp>&, const complex<_Tp>&)[m[K’
+  365 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:365:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type[m[K’ {aka ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  189 |         double dt = (msg->header.stamp - [01;36m[Klast_odom_stamp_[m[K).seconds();
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:374:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator-[m[K(const complex<_Tp>&, const _Tp&)[m[K’
+  374 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:374:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type[m[K’ {aka ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  189 |         double dt = (msg->header.stamp - [01;36m[Klast_odom_stamp_[m[K).seconds();
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:383:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator-[m[K(const _Tp&, const complex<_Tp>&)[m[K’
+  383 |     [01;36m[Koperator[m[K-(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:383:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Time[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  189 |         double dt = (msg->header.stamp - [01;36m[Klast_odom_stamp_[m[K).seconds();
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:460:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator-[m[K(const complex<_Tp>&)[m[K’
+  460 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:460:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:189:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg::Header_<std::allocator<void> >::_stamp_type[m[K’ {aka ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  189 |         double dt = (msg->header.stamp - [01;36m[Klast_odom_stamp_[m[K).seconds();
+      |                                          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/time.hpp:24[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/clock.hpp:24[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/client.hpp:38[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K:
+[01m[K/opt/ros/kilted/include/rclcpp/rclcpp/duration.hpp:168:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbuiltin_interfaces::msg::Time rclcpp::[01;32m[Koperator-[m[K(const builtin_interfaces::msg::Time&, const Duration&)[m[K’
+  168 | [01;36m[Koperator[m[K-(const builtin_interfaces::msg::Time & lhs, const rclcpp::Duration & rhs);
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/kilted/include/rclcpp/rclcpp/duration.hpp:168:79:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Krclcpp::Time[m[K’ to ‘[01m[Kconst rclcpp::Duration&[m[K’
+  168 | operator-(const builtin_interfaces::msg::Time & lhs, [01;36m[Kconst rclcpp::Duration & rhs[m[K);
+      |                                                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:200:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic double UKF::[01;32m[KnormalizeAngle[m[K(double)[m[K’ is private within this context
+  200 |         double dtheta = [01;31m[KUKF::normalizeAngle(theta - last_odom_theta_)[m[K;
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/include/kalman_positioning/ukf.hpp:107:19:[m[K [01;36m[Knote: [m[Kdeclared private here
+  107 |     static double [01;36m[KnormalizeAngle[m[K(double angle);
+      |                   [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:76: CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

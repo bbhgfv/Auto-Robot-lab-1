@@ -1,0 +1,23 @@
+[0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(positioning_node PUBLIC
+      ${geometry_msgs_TARGETS}
+      ${nav_msgs_TARGETS}
+      ${sensor_msgs_TARGETS}
+      rclcpp::rclcpp
+      sensor_msgs::sensor_msgs_library
+      tf2::tf2
+      tf2_geometry_msgs::tf2_geometry_msgs
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:36 (ament_target_dependencies)
+
+[0m
+[31mCMake Error at CMakeLists.txt:61 (install):
+  install FILES given directory "data" to install.
+
+[0m
+gmake: *** [Makefile:321: cmake_check_build_system] Error 1

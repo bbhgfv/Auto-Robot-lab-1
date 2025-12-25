@@ -1,0 +1,43 @@
+[0.040s] Invoking command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4
+[0.517s] [ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o[0m
+[9.307s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:162:10:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KPositioningNode::[m[K’ on member ‘[01m[KodometryCallback[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[9.307s]   162 |     void [01;31m[KPositioningNode[m[K::odometryCallback(
+[9.308s]       |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[9.353s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:[m[K In member function ‘[01m[Kvoid PositioningNode::[01;32m[KodometryCallback[m[K(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[9.353s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:190:14:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_prev_odom_[m[K’ was not declared in this scope
+[9.353s]   190 |         if (![01;31m[Khave_prev_odom_[m[K) {
+[9.353s]       |              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[9.370s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:191:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_x_[m[K’ was not declared in this scope
+[9.371s]   191 |             [01;31m[Kprev_x_[m[K     = x;
+[9.371s]       |             [01;31m[K^~~~~~~[m[K
+[9.379s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:192:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_y_[m[K’ was not declared in this scope
+[9.379s]   192 |             [01;31m[Kprev_y_[m[K     = y;
+[9.379s]       |             [01;31m[K^~~~~~~[m[K
+[9.390s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:193:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_theta_[m[K’ was not declared in this scope
+[9.391s]   193 |             [01;31m[Kprev_theta_[m[K = theta;
+[9.391s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[9.401s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:194:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_stamp_[m[K’ was not declared in this scope
+[9.401s]   194 |             [01;31m[Kprev_stamp_[m[K = stamp;
+[9.402s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[9.412s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:206:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_stamp_[m[K’ was not declared in this scope
+[9.412s]   206 |         const double dt = (stamp - [01;31m[Kprev_stamp_[m[K).seconds();
+[9.412s]       |                                    [01;31m[K^~~~~~~~~~~[m[K
+[9.422s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:214:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_x_[m[K’ was not declared in this scope
+[9.422s]   214 |         const double dx = x - [01;31m[Kprev_x_[m[K;
+[9.422s]       |                               [01;31m[K^~~~~~~[m[K
+[9.432s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:215:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_y_[m[K’ was not declared in this scope
+[9.432s]   215 |         const double dy = y - [01;31m[Kprev_y_[m[K;
+[9.432s]       |                               [01;31m[K^~~~~~~[m[K
+[9.447s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:221:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_theta_[m[K’ was not declared in this scope
+[9.447s]   221 |         const double dtheta = wrap_angle(theta - [01;31m[Kprev_theta_[m[K);
+[9.447s]       |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[9.448s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:232:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<UKF>[m[K’ has no member named ‘[01m[Kpredict[m[K’
+[9.449s]   232 |         ukf_.[01;31m[Kpredict[m[K(dt, dx, dy, dtheta);
+[9.449s]       |              [01;31m[K^~~~~~~[m[K
+[9.449s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:235:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<UKF>[m[K’ has no member named ‘[01m[KgetState[m[K’
+[9.449s]   235 |         Eigen::VectorXd state = ukf_.[01;31m[KgetState[m[K();
+[9.449s]       |                                      [01;31m[K^~~~~~~~[m[K
+[15.188s] gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:76: CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o] Error 1
+[15.190s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+[15.192s] gmake: *** [Makefile:146: all] Error 2
+[15.206s] Invoked command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4

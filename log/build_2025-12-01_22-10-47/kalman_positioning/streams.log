@@ -1,0 +1,12 @@
+[0.049s] Invoking command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4
+[0.437s] [ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o[0m
+[7.895s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:[m[K In constructor ‘[01m[KPositioningNode::[01;32m[KPositioningNode[m[K()[m[K’:
+[7.895s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:49:76:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’ to ‘[01m[Kdouble[m[K’ in assignment
+[7.896s]    49 |         observation_radius_          = [01;31m[Kthis->declare_parameter<std::string>("observation_radius", "5.0")[m[K;
+[7.896s]       |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.896s]       |                                                                            [01;31m[K|[m[K
+[7.896s]       |                                                                            [01;31m[Kstd::__cxx11::basic_string<char>[m[K
+[13.218s] gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:76: CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o] Error 1
+[13.221s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+[13.224s] gmake: *** [Makefile:146: all] Error 2
+[13.237s] Invoked command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4

@@ -1,0 +1,16 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o[0m
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:[m[K In member function ‘[01m[Kvoid PositioningNode::[01;32m[KodometryCallback[m[K(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:210:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPositioningNode::publishEstimatedOdometry(rclcpp::Time&)[m[K’
+  210 |         [01;31m[KpublishEstimatedOdometry(current_stamp)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:301:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid PositioningNode::[01;32m[KpublishEstimatedOdometry[m[K(const rclcpp::Time&, const nav_msgs::msg::Odometry&)[m[K’
+  301 |     void [01;36m[KpublishEstimatedOdometry[m[K(const rclcpp::Time& timestamp,
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:301:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:[m[K In member function ‘[01m[Kvoid PositioningNode::[01;32m[KpublishEstimatedOdometry[m[K(const rclcpp::Time&, const nav_msgs::msg::Odometry&)[m[K’:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:302:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodom_msg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  302 |                                   [01;35m[Kconst nav_msgs::msg::Odometry& odom_msg[m[K) {
+      |                                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:76: CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

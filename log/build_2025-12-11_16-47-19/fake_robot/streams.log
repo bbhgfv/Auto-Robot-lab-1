@@ -1,0 +1,29 @@
+[0.092s] Invoking command in '/home/studamr/ros2_ws_exer01/build/fake_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/fake_robot -- -j4 -l4
+[0.622s] [ 50%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o[0m
+[23.251s] [100%] [32m[1mLinking CXX executable fake_robot[0m
+[24.800s] [100%] Built target fake_robot
+[24.845s] Invoked command in '/home/studamr/ros2_ws_exer01/build/fake_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/fake_robot -- -j4 -l4
+[24.857s] Invoking command in '/home/studamr/ros2_ws_exer01/build/fake_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/studamr/ros2_ws_exer01/build/fake_robot
+[24.897s] -- Install configuration: ""
+[24.898s] -- Installing: /home/studamr/ros2_ws_exer01/install/fake_robot/lib/fake_robot/fake_robot
+[24.926s] -- Set non-toolchain portion of runtime path of "/home/studamr/ros2_ws_exer01/install/fake_robot/lib/fake_robot/fake_robot" to ""
+[24.927s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/launch
+[24.927s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/launch/fake_robot.launch.py
+[24.927s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/data
+[24.927s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/data/landmarks.csv
+[24.927s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/ament_index/resource_index/package_run_dependencies/fake_robot
+[24.928s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/ament_index/resource_index/parent_prefix_path/fake_robot
+[24.928s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/ament_prefix_path.sh
+[24.928s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/ament_prefix_path.dsv
+[24.928s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/path.sh
+[24.928s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/environment/path.dsv
+[24.929s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.bash
+[24.929s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.sh
+[24.929s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.zsh
+[24.929s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/local_setup.dsv
+[24.929s] -- Installing: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/package.dsv
+[24.929s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/ament_index/resource_index/packages/fake_robot
+[24.929s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/cmake/fake_robotConfig.cmake
+[24.929s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/cmake/fake_robotConfig-version.cmake
+[24.929s] -- Up-to-date: /home/studamr/ros2_ws_exer01/install/fake_robot/share/fake_robot/package.xml
+[24.945s] Invoked command in '/home/studamr/ros2_ws_exer01/build/fake_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/studamr/ros2_ws_exer01/build/fake_robot

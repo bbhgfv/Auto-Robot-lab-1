@@ -1,0 +1,86 @@
+[0.021s] Invoking command in '/home/studamr/ros2_ws_exer01/src/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/studamr/ros2_ws_exer01/src/kalman_positioning -DCMAKE_INSTALL_PREFIX=/home/studamr/ros2_ws_exer01/src/install/kalman_positioning
+[0.133s] -- The C compiler identification is GNU 13.3.0
+[0.235s] -- The CXX compiler identification is GNU 13.3.0
+[0.287s] -- Detecting C compiler ABI info
+[0.494s] -- Detecting C compiler ABI info - done
+[0.512s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.512s] -- Detecting C compile features
+[0.513s] -- Detecting C compile features - done
+[0.541s] -- Detecting CXX compiler ABI info
+[0.746s] -- Detecting CXX compiler ABI info - done
+[0.761s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.762s] -- Detecting CXX compile features
+[0.762s] -- Detecting CXX compile features - done
+[0.766s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[1.025s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.172s] -- Found rclcpp: 29.5.3 (/opt/ros/kilted/share/rclcpp/cmake)
+[1.223s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[1.238s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[1.261s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.288s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.368s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[1.372s] -- Found rmw_fastrtps_cpp: 9.3.3 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[1.581s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.605s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.686s] -- Found nav_msgs: 5.5.1 (/opt/ros/kilted/share/nav_msgs/cmake)
+[1.758s] -- Found sensor_msgs: 5.5.1 (/opt/ros/kilted/share/sensor_msgs/cmake)
+[1.784s] -- Found tf2: 0.41.2 (/opt/ros/kilted/share/tf2/cmake)
+[1.789s] -- Found tf2_geometry_msgs: 0.41.2 (/opt/ros/kilted/share/tf2_geometry_msgs/cmake)
+[1.808s] -- Found eigen3_cmake_module: 0.4.0 (/opt/ros/kilted/share/eigen3_cmake_module/cmake)
+[1.808s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.808s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.954s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[1.956s] [0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+[1.956s]   ament_target_dependencies() is deprecated.  Use target_link_libraries()
+[1.956s]   with modern CMake targets instead.  Try replacing this call with:
+[1.956s] 
+[1.956s]     target_link_libraries(positioning_node PUBLIC
+[1.956s]       ${geometry_msgs_TARGETS}
+[1.956s]       ${nav_msgs_TARGETS}
+[1.956s]       ${sensor_msgs_TARGETS}
+[1.956s]       rclcpp::rclcpp
+[1.956s]       sensor_msgs::sensor_msgs_library
+[1.956s]       tf2::tf2
+[1.956s]       tf2_geometry_msgs::tf2_geometry_msgs
+[1.956s]     )
+[1.956s] 
+[1.956s] Call Stack (most recent call first):
+[1.957s]   CMakeLists.txt:34 (ament_target_dependencies)
+[1.957s] 
+[1.957s] [0m
+[2.112s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.118s] -- Configured cppcheck include dirs: /home/studamr/ros2_ws_exer01/src/kalman_positioning/include
+[2.118s] -- Configured cppcheck exclude dirs and/or files: 
+[2.124s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.125s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.125s] -- Added test 'lint_cmake' to check CMake code style
+[2.129s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.152s] -- Added test 'uncrustify' to check C / C++ code style
+[2.152s] -- Configured uncrustify additional arguments: 
+[2.156s] -- Added test 'xmllint' to check XML markup files
+[2.167s] -- Configuring done (2.1s)
+[2.612s] -- Generating done (0.3s)
+[2.635s] -- Build files have been written to: /home/studamr/ros2_ws_exer01/src/build/kalman_positioning
+[2.660s] Invoked command in '/home/studamr/ros2_ws_exer01/src/build/kalman_positioning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/studamr/ros2_ws_exer01/src/kalman_positioning -DCMAKE_INSTALL_PREFIX=/home/studamr/ros2_ws_exer01/src/install/kalman_positioning
+[2.662s] Invoking command in '/home/studamr/ros2_ws_exer01/src/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/src/build/kalman_positioning -- -j4 -l4
+[2.824s] [ 50%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o[0m
+[19.256s] [100%] [32m[1mLinking CXX executable positioning_node[0m
+[35.100s] [100%] Built target positioning_node
+[35.135s] Invoked command in '/home/studamr/ros2_ws_exer01/src/build/kalman_positioning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/src/build/kalman_positioning -- -j4 -l4
+[35.137s] Invoking command in '/home/studamr/ros2_ws_exer01/src/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/studamr/ros2_ws_exer01/src/build/kalman_positioning
+[35.156s] -- Install configuration: ""
+[35.156s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/lib/kalman_positioning/positioning_node
+[35.168s] -- Set non-toolchain portion of runtime path of "/home/studamr/ros2_ws_exer01/src/install/kalman_positioning/lib/kalman_positioning/positioning_node" to ""
+[35.168s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/include
+[35.169s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/include/kalman_positioning
+[35.169s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/include/kalman_positioning/ukf.hpp
+[35.169s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/include/kalman_positioning/landmark_manager.hpp
+[35.169s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/launch
+[35.170s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/launch/positioning.launch.py
+[35.170s] [31mCMake Error at cmake_install.cmake:78 (file):
+[35.171s]   file INSTALL cannot find
+[35.171s]   "/home/studamr/ros2_ws_exer01/src/kalman_positioning/landmarks.csv": No
+[35.171s]   such file or directory.
+[35.171s] 
+[35.171s] [0m
+[35.174s] Invoked command in '/home/studamr/ros2_ws_exer01/src/build/kalman_positioning' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/studamr/ros2_ws_exer01/src/build/kalman_positioning

@@ -1,0 +1,25 @@
+[100%] Built target positioning_node
+-- Install configuration: ""
+-- Up-to-date: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/lib/kalman_positioning/positioning_node
+-- Up-to-date: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/include
+-- Up-to-date: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/include/kalman_positioning
+-- Up-to-date: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/include/kalman_positioning/ukf.hpp
+-- Up-to-date: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/include/kalman_positioning/landmark_manager.hpp
+-- Up-to-date: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/launch
+-- Up-to-date: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/launch/positioning.launch.py
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/landmarks.csv
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/ament_index/resource_index/package_run_dependencies/kalman_positioning
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/ament_index/resource_index/parent_prefix_path/kalman_positioning
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/environment/ament_prefix_path.sh
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/environment/ament_prefix_path.dsv
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/environment/path.sh
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/environment/path.dsv
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/local_setup.bash
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/local_setup.sh
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/local_setup.zsh
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/local_setup.dsv
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/package.dsv
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/ament_index/resource_index/packages/kalman_positioning
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/cmake/kalman_positioningConfig.cmake
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/cmake/kalman_positioningConfig-version.cmake
+-- Installing: /home/studamr/ros2_ws_exer01/src/install/kalman_positioning/share/kalman_positioning/package.xml

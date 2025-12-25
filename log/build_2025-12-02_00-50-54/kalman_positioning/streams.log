@@ -1,0 +1,14 @@
+[0.072s] Invoking command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4
+[0.427s] [ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o[0m
+[9.082s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:[m[K In member function ‘[01m[Kvoid PositioningNode::[01;32m[KodometryCallback[m[K(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[9.083s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:195:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic double UKF::[01;32m[KnormalizeAngle[m[K(double)[m[K’ is private within this context
+[9.083s]   195 |         double dtheta = [01;31m[KUKF::normalizeAngle(theta - last_theta_)[m[K;
+[9.083s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[9.085s] In file included from [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:8[m[K:
+[9.086s] [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/include/kalman_positioning/ukf.hpp:107:19:[m[K [01;36m[Knote: [m[Kdeclared private here
+[9.086s]   107 |     static double [01;36m[KnormalizeAngle[m[K(double angle);
+[9.086s]       |                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[15.019s] gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:76: CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o] Error 1
+[15.019s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+[15.019s] gmake: *** [Makefile:146: all] Error 2
+[15.028s] Invoked command in '/home/studamr/ros2_ws_exer01/build/kalman_positioning' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/build/kalman_positioning -- -j4 -l4

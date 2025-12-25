@@ -1,0 +1,41 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o[0m
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:162:10:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KPositioningNode::[m[K’ on member ‘[01m[KodometryCallback[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  162 |     void [01;31m[KPositioningNode[m[K::odometryCallback(
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:[m[K In member function ‘[01m[Kvoid PositioningNode::[01;32m[KodometryCallback[m[K(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:190:14:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_prev_odom_[m[K’ was not declared in this scope
+  190 |         if (![01;31m[Khave_prev_odom_[m[K) {
+      |              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:191:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_x_[m[K’ was not declared in this scope
+  191 |             [01;31m[Kprev_x_[m[K     = x;
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:192:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_y_[m[K’ was not declared in this scope
+  192 |             [01;31m[Kprev_y_[m[K     = y;
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:193:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_theta_[m[K’ was not declared in this scope
+  193 |             [01;31m[Kprev_theta_[m[K = theta;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:194:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_stamp_[m[K’ was not declared in this scope
+  194 |             [01;31m[Kprev_stamp_[m[K = stamp;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:206:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_stamp_[m[K’ was not declared in this scope
+  206 |         const double dt = (stamp - [01;31m[Kprev_stamp_[m[K).seconds();
+      |                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:214:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_x_[m[K’ was not declared in this scope
+  214 |         const double dx = x - [01;31m[Kprev_x_[m[K;
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:215:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_y_[m[K’ was not declared in this scope
+  215 |         const double dy = y - [01;31m[Kprev_y_[m[K;
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:221:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_theta_[m[K’ was not declared in this scope
+  221 |         const double dtheta = wrap_angle(theta - [01;31m[Kprev_theta_[m[K);
+      |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:232:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<UKF>[m[K’ has no member named ‘[01m[Kpredict[m[K’
+  232 |         ukf_.[01;31m[Kpredict[m[K(dt, dx, dy, dtheta);
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:235:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unique_ptr<UKF>[m[K’ has no member named ‘[01m[KgetState[m[K’
+  235 |         Eigen::VectorXd state = ukf_.[01;31m[KgetState[m[K();
+      |                                      [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:76: CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

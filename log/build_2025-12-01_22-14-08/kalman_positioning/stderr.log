@@ -1,0 +1,24 @@
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:[m[K In constructor ‘[01m[KPositioningNode::[01;32m[KPositioningNode[m[K()[m[K’:
+[01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:49:71:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPositioningNode::declare_parameter<double>(const char [19], const char [4])[m[K’
+   49 |         observation_radius_          = [01;31m[Kthis->declare_parameter<double>("observation_radius", "5.0")[m[K;
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/node.hpp:1650[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/kilted/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/studamr/ros2_ws_exer01/src/kalman_positioning/src/positioning_node.cpp:1[m[K:
+[01m[K/opt/ros/kilted/include/rclcpp/rclcpp/node_impl.hpp:233:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kauto rclcpp::Node::[01;32m[Kdeclare_parameter[m[K(const std::string&, const ParameterT&, const rcl_interfaces::msg::ParameterDescriptor&, bool) [35m[K[with ParameterT = double; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K[m[K’
+  233 | [01;36m[KNode[m[K::declare_parameter(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/kilted/include/rclcpp/rclcpp/node_impl.hpp:235:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kconst char [4][m[K’ to ‘[01m[Kconst double&[m[K’
+  235 |   [01;36m[Kconst ParameterT & default_value[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/kilted/include/rclcpp/rclcpp/node_impl.hpp:253:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kauto rclcpp::Node::[01;32m[Kdeclare_parameter[m[K(const std::string&, const rcl_interfaces::msg::ParameterDescriptor&, bool) [35m[K[with ParameterT = double; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K[m[K’
+  253 | [01;36m[KNode[m[K::declare_parameter(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/kilted/include/rclcpp/rclcpp/node_impl.hpp:255:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kconst char [4][m[K’ to ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor&[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >&[m[K’}
+  255 |   [01;36m[Kconst rcl_interfaces::msg::ParameterDescriptor & parameter_descriptor[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/positioning_node.dir/build.make:76: CMakeFiles/positioning_node.dir/src/positioning_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/positioning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

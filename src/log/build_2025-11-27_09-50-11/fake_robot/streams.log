@@ -1,0 +1,91 @@
+[0.019s] Invoking command in '/home/studamr/ros2_ws_exer01/src/build/fake_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/studamr/ros2_ws_exer01/src/fake_robot -DCMAKE_INSTALL_PREFIX=/home/studamr/ros2_ws_exer01/src/install/fake_robot
+[0.146s] -- The C compiler identification is GNU 13.3.0
+[0.254s] -- The CXX compiler identification is GNU 13.3.0
+[0.290s] -- Detecting C compiler ABI info
+[0.499s] -- Detecting C compiler ABI info - done
+[0.513s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.513s] -- Detecting C compile features
+[0.514s] -- Detecting C compile features - done
+[0.540s] -- Detecting CXX compiler ABI info
+[0.758s] -- Detecting CXX compiler ABI info - done
+[0.771s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.772s] -- Detecting CXX compile features
+[0.773s] -- Detecting CXX compile features - done
+[0.777s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[1.015s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.183s] -- Found rclcpp: 29.5.3 (/opt/ros/kilted/share/rclcpp/cmake)
+[1.229s] -- Found rosidl_generator_c: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[1.247s] -- Found rosidl_generator_cpp: 4.9.5 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[1.272s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.299s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.380s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[1.384s] -- Found rmw_fastrtps_cpp: 9.3.3 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[1.594s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.616s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.702s] -- Found geometry_msgs: 5.5.1 (/opt/ros/kilted/share/geometry_msgs/cmake)
+[1.746s] -- Found sensor_msgs: 5.5.1 (/opt/ros/kilted/share/sensor_msgs/cmake)
+[1.774s] -- Found nav_msgs: 5.5.1 (/opt/ros/kilted/share/nav_msgs/cmake)
+[1.801s] -- Found tf2_ros: 0.41.2 (/opt/ros/kilted/share/tf2_ros/cmake)
+[1.939s] [0mCMake Deprecation Warning at /opt/ros/kilted/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+[1.939s]   ament_target_dependencies() is deprecated.  Use target_link_libraries()
+[1.940s]   with modern CMake targets instead.  Try replacing this call with:
+[1.940s] 
+[1.940s]     target_link_libraries(fake_robot PUBLIC
+[1.940s]       ${geometry_msgs_TARGETS}
+[1.940s]       ${nav_msgs_TARGETS}
+[1.940s]       ${sensor_msgs_TARGETS}
+[1.940s]       ${std_msgs_TARGETS}
+[1.940s]       rclcpp::rclcpp
+[1.940s]       sensor_msgs::sensor_msgs_library
+[1.940s]       tf2_ros::static_transform_broadcaster_node
+[1.940s]       tf2_ros::tf2_ros
+[1.940s]     )
+[1.940s] 
+[1.940s] Call Stack (most recent call first):
+[1.940s]   CMakeLists.txt:22 (ament_target_dependencies)
+[1.940s] 
+[1.940s] [0m
+[1.943s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[2.099s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.099s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/studamr/ros2_ws_exer01/src/fake_robot/include>
+[2.099s] -- Configured cppcheck exclude dirs and/or files: 
+[2.101s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.101s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.106s] -- Added test 'lint_cmake' to check CMake code style
+[2.106s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.112s] -- Added test 'uncrustify' to check C / C++ code style
+[2.112s] -- Configured uncrustify additional arguments: 
+[2.117s] -- Added test 'xmllint' to check XML markup files
+[2.121s] -- Configuring done (2.1s)
+[2.161s] -- Generating done (0.0s)
+[2.167s] -- Build files have been written to: /home/studamr/ros2_ws_exer01/src/build/fake_robot
+[2.190s] Invoked command in '/home/studamr/ros2_ws_exer01/src/build/fake_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/studamr/ros2_ws_exer01/src/fake_robot -DCMAKE_INSTALL_PREFIX=/home/studamr/ros2_ws_exer01/src/install/fake_robot
+[2.193s] Invoking command in '/home/studamr/ros2_ws_exer01/src/build/fake_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/src/build/fake_robot -- -j4 -l4
+[2.318s] [ 50%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o[0m
+[12.296s] [100%] [32m[1mLinking CXX executable fake_robot[0m
+[12.869s] [100%] Built target fake_robot
+[12.915s] Invoked command in '/home/studamr/ros2_ws_exer01/src/build/fake_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/studamr/ros2_ws_exer01/src/build/fake_robot -- -j4 -l4
+[12.921s] Invoking command in '/home/studamr/ros2_ws_exer01/src/build/fake_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/studamr/ros2_ws_exer01/src/build/fake_robot
+[12.936s] -- Install configuration: ""
+[12.936s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/lib/fake_robot/fake_robot
+[12.941s] -- Set non-toolchain portion of runtime path of "/home/studamr/ros2_ws_exer01/src/install/fake_robot/lib/fake_robot/fake_robot" to ""
+[12.941s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/launch
+[12.941s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/launch/fake_robot.launch.py
+[12.941s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/data
+[12.941s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/data/landmarks.csv
+[12.942s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/ament_index/resource_index/package_run_dependencies/fake_robot
+[12.943s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/ament_index/resource_index/parent_prefix_path/fake_robot
+[12.943s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/environment/ament_prefix_path.sh
+[12.943s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/environment/ament_prefix_path.dsv
+[12.943s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/environment/path.sh
+[12.945s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/environment/path.dsv
+[12.945s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/local_setup.bash
+[12.945s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/local_setup.sh
+[12.945s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/local_setup.zsh
+[12.945s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/local_setup.dsv
+[12.945s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/package.dsv
+[12.946s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/ament_index/resource_index/packages/fake_robot
+[12.946s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/cmake/fake_robotConfig.cmake
+[12.946s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/cmake/fake_robotConfig-version.cmake
+[12.946s] -- Installing: /home/studamr/ros2_ws_exer01/src/install/fake_robot/share/fake_robot/package.xml
+[12.950s] Invoked command in '/home/studamr/ros2_ws_exer01/src/build/fake_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/studamr/ros2_ws_exer01/src/build/fake_robot
