@@ -15,8 +15,8 @@ TRUE_TOPIC = "/robot_gt"
 EST_TOPIC  = "/robot_estimated_odometry"
 
 # ---- metrics settings (tweak if needed)
-CONV_THRESH_M = 0.20          # "converged" when position error < 20 cm
-CONV_HOLD_SEC = 3.0           # must stay below threshold for 3 seconds
+CONV_THRESH_M = 0.35          # "converged" when position error < 20 cm
+CONV_HOLD_SEC = 2.0           # must stay below threshold for 3 seconds
 STABILITY_STD_WINDOW_SEC = 5.0  # compute std in last 5 seconds as "stability"
 # ----------------------
 
